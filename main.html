@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gupshup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="js/currentTime.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header noselect">
+            <div class="header-status-wrapper">
+                <div class="header-status">
+                    <img src="media/svg/header-icon.svg" style="filter: invert(50%) sepia(2%) saturate(6372%) hue-rotate(250deg) brightness(94%) contrast(75%); height: 18px; width: 18px; padding: 6px;">
+                </div>
+                <div class="header-status">
+                    Online
+                </div>
+            </div>
+            <div class="header-title">
+                Welcome to Gupshup
+            </div>
+            <div class="header-time" id="currentTime">00:00:00</div>
+        </header>
+
+        <main class="main">
+            <div class="chat-tree">
+                <ul class="chat-list noselect">
+                    <li>
+                        <details open>
+                        <summary class="tree-title role-king">
+                            <img class="tree-icon" src="media/svg/chat-tree.svg">
+                            House Tree
+                        </summary>
+                    <ul>
+
+                            <li>
+                                <details>
+                                <summary class="tree-subtitle role-cpp-devs">
+                                    <img class="tree-icon" src="media/svg/square.svg">
+                                    HOME
+                                </summary>
+                                <ul>
+                                <li>
+                                    <img class="tree-icon" src="media/svg/chat.svg">
+                                    general
+                                </li>
+                                <li>
+                                    <img class="tree-icon" src="media/svg/muted.svg">
+                                    <img class="tree-icon" src="media/svg/chat.svg">
+                                    shawn(2)
+                                </li>
+                                <li>
+                                    <img class="tree-icon" src="media/svg/chat.svg">
+                                    emma(23)
+                                </li>
+                                </ul>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                <summary class="tree-subtitle role-cpp-devs">
+                                    <img class="tree-icon" src="media/svg/square.svg">
+                                    school
+                                </summary>
+                                <ul>
+                                <li>
+                                    <img class="tree-icon" src="media/svg/chat.svg">
+                                    general
+                                </li>
+                                <li>
+                                    <img class="tree-icon" src="media/svg/muted.svg">
+                                    <img class="tree-icon" src="media/svg/party.svg">
+                                    science_club
+                                </li>
+                                </ul>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                <summary class="tree-subtitle role-pythonistas">
+                                    <img class="tree-icon" src="media/svg/square.svg">
+                                    study
+                                </summary>
+                                <ul>
+                                <li class="role-pythonistas">
+                                    <img class="tree-icon" src="media/svg/muted.svg">
+                                    <img class="tree-icon" src="media/svg/chat.svg">
+                                    general
+                                </li>
+                                <li>
+                                    <img class="tree-icon" src="media/svg/internship.svg">
+                                    internship(1)
+                                </li>
+                                <li>
+                                    <img class="tree-icon" src="media/svg/off-topic.svg">
+                                    off-topic(3)
+                                </li>
+                                </ul>
+                                </details>
+                            </li>
+
+                    </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="chat-wrapper">
+                <div class="current-chat">study/general</div>
+                <div class="chat">
+                    <span class="sender role-king">SERVER</span>: Finally! you made it here, shawn<br>
+                    <span class="sender role-king">SERVER</span>: A wild jay appeared<br>
+                    <span class="sender role-king">SERVER</span>: Welcome to the party, emma<br>
+                    <span class="sender role-king">jon</span>: hi all!<br>
+                    <span class="sender role-pythonistas">shawn</span>: heyy !!<br>
+                    <span class="sender role-cpp-devs">jay</span>: yoo!<br>
+                    <span class="sender role-cpp-devs">emma</span>: heya☺<br>
+                </div>
+                <input type="text" name="messageInput" id="messageInput" class="message-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+
+            <div class="online">
+                <div class="chat-tree">
+                    <ul class="chat-list noselect">
+                        <li>
+                            <details open>
+                            <summary class="tree-title role-king">
+                                <img class="tree-icon" src="media/svg/party.svg">
+                                Members
+                            </summary>
+                        <ul>
+    
+                                <li>
+                                    <details>
+                                    <summary class="tree-subtitle role-king">
+                                        <img class="tree-icon" src="media/svg/king.svg">
+                                        king
+                                    </summary>
+                                    <ul>
+                                    <li>
+                                        <img class="tree-icon" src="media/svg/user.svg">
+                                        jon
+                                    </li>
+                                    </ul>
+                                    </details>
+                                </li>
+    
+                                <li>
+                                    <details>
+                                    <summary class="tree-subtitle">
+                                        <img class="tree-icon" src="media/svg/square.svg">
+                                        pawn
+                                    </summary>
+                                    </details>
+                                </li>
+    
+                                <li>
+                                    <details>
+                                    <summary class="tree-subtitle role-pythonistas">
+                                        <img class="tree-icon" src="media/svg/python.svg">
+                                        pythonistas
+                                    </summary>
+                                    <ul>
+                                    <li class="role-user">
+                                        <img class="tree-icon" src="media/svg/user.svg">
+                                        shawn
+                                    </li>
+                                    </ul>
+                                    </details>
+                                </li>
+
+                                <li>
+                                    <details>
+                                    <summary class="tree-subtitle role-cpp-devs">
+                                        <img class="tree-icon" src="media/svg/cpp.svg">
+                                        cpp-devs
+                                    </summary>
+                                    <ul>
+                                    <li class="role-user">
+                                        <img class="tree-icon" src="media/svg/user.svg">
+                                        jay
+                                    </li>
+                                    </ul>
+                                    <ul>
+                                    <li class="role-user">
+                                        <img class="tree-icon" src="media/svg/user.svg">
+                                        emma
+                                    </li>
+                                    </ul>
+                                    </details>
+                                </li>
+    
+                        </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>
